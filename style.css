@@ -1,0 +1,578 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html, body {
+   height: 100%;
+   width: 100%;
+   overflow-x: hidden;
+}
+
+/*---Custom Fonts---*/
+@font-face {
+   font-family: robotoRegular;
+   src:url(/Roboto-Regular.ttf);
+}
+@font-face {
+   font-family: cocoLight;
+   src:url(/CocoGothic-Light_trial.ttf);
+}
+
+@font-face {
+   font-family: arizonia;
+   src:url(/ARIZONIA-REGULAR-HANDWRITTING.ttf);
+}
+
+@font-face {
+   font-family: blackMango;
+   src:url(/BLACK-MANGO.ttf);
+}
+
+@font-face {
+   font-family: cinzelRegular;
+   src:url(/CINZEL-LUXURY-REGULAR.otf);
+}
+
+@font-face {
+   font-family: cinzelLuxury;
+   src:url(/CINZEL-LUXURY.otf);
+}
+
+@font-face {
+   font-family: karl;
+   src:url(/KARL-GEOFF-REGULAR.ttf);
+}
+
+@font-face {
+   font-family: rumaniaya;
+   src:url(/Rumaniaya-Handwritting.otf);
+}
+
+@font-face {
+   font-family: slight;
+   src:url(/fonts/SLIGHT-HANDWRITTING.ttf);
+}
+
+@font-face {
+   font-family: slightRegular;
+   src:url(/Slight-Regular.ttf);
+}
+
+@font-face {
+   font-family: sunset;
+   src:url(/The-Sunset.ttf);
+} /*--Custom Fonts Ended--*/
+
+/*--Main Styling--*/
+.hero {
+   height: 100vh;
+   width: 100%;
+   background-image: 
+   linear-gradient(to bottom, #F40076, #342711);
+   color: #FFF; 
+   position: relative;
+   overflow: hidden;
+ /*background: rgba(255, 255, 255, 0.07);
+   border-radius: 16px;
+   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+   backdrop-filter: blur(6px);
+   -webkit-backdrop-filter: blur(6px); */
+}
+
+.heart-msg {
+  height: 250px; /* adjust to control the size */
+  aspect-ratio: 1;
+  --_m: radial-gradient(#000 69%,#0000 70%) 84.5%/50%;
+  -webkit-mask-box-image: var(--_m);
+             mask-border: var(--_m);
+  clip-path: polygon(-41% 0,50% 91%, 141% 0);
+  margin: 0 14px;
+  transform: translateY(100px);
+  background-color: #000;
+  z-index: 2;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2vh auto 0 auto;
+  padding: 1vh 2vh 4vh 2vh;
+  
+  font-family: cocoLight;
+  font-weight: 100;
+  font-size: 0.7rem;
+  
+  text-transform: capitalize;
+  text-align: center;
+  line-height: 1rem;
+  opacity: 0;
+  transform: scale(0);
+  
+  transition: 1s all ease;
+}
+
+.hero-text {
+   position: absolute;
+   top: 55%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 100%;
+   padding: 3vh;
+   z-index: 0;
+}
+
+.hero-text h3 {
+   text-transform: uppercase;
+   text-align: center;
+   display: block;
+   
+   font-family: cocoLight;
+   letter-spacing: 3px;
+   -webkit-text-stroke: 0.5px #FFF;
+   
+   margin: 0 0 -2.5vh -7.8vh;
+}
+
+.hero-text h2 {
+   text-transform: capitalize;
+   text-align: center;
+   display: block;
+   
+   font-family: rumaniaya;
+   font-size: 4.5rem;
+   font-weight: 100;
+   
+   letter-spacing: 5px;
+   word-spacing: -15px;
+}
+
+.hero-text h1 {
+   text-transform: uppercase;
+   text-align: center;
+   display: block;
+   
+   font-family: cinzelLuxury;
+   font-size: 7rem;
+}
+
+.hero-text small {
+   text-transform: capitalize;
+   text-align: center;
+   display: block;
+   
+   font-family: cinzelRegular;
+   line-height: 1.25rem;
+   word-spacing: 2px;
+   margin-top: 3vh;
+} /*--hero Text Ended--*/
+
+
+.heart-con {
+ position: absolute;
+ bottom: 0;
+ display: flex;
+}
+
+.heart-con .heart {
+  height: 50px; /* adjust to control the size */
+  aspect-ratio: 1;
+  --_m: radial-gradient(#000 69%,#0000 70%) 84.5%/50%;
+  -webkit-mask-box-image: var(--_m);
+             mask-border: var(--_m);
+  clip-path: polygon(-41% 0,50% 91%, 141% 0);
+  margin: 0 14px;
+  transform: translateY(100px);
+  animation: heart-animation 7s linear infinite;
+  background-color: #000;
+  z-index: 0;
+}
+/*----Heart Animation----*/
+@keyframes heart-animation {
+  0%{
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  70%{
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+}
+
+
+a{
+   text-decoration: none;
+}
+.btn {
+   padding: 1.5vh 2vh;
+   border: none;
+   border-radius: 7px;
+   
+   font-family: cocoLight;
+   text-transform: capitalize;
+   
+   background-image: 
+   linear-gradient(to top left, #0F9690, #6DA5C0);
+   -webkit-text-stroke: 0.5px #000;
+   
+   display: block;
+   margin: 5vh auto 0 auto;
+   z-index: 999;
+}
+
+
+/*--Page2 Styling--*/
+.page2 {
+   height: 100vh;
+   width: 100%;
+   overflow-x: hidden;
+   position: relative;
+   
+   background-image: 
+   linear-gradient(to bottom right, #1B2C22, #013392);
+   color: #FFF;
+   padding: 2vh;
+}
+
+.page2 .page2-heading {
+   display: block;
+   margin: 2vh auto 2vh auto;
+   text-transform: capitalize;
+   text-align: center;
+   
+   font-family: arizonia;
+   font-size: 3rem;
+   font-weight: 100;
+}
+
+.page2 .page2-text {
+   width: 100%;
+   padding: 3vh 2vh;
+   
+   text-transform: capitalize;
+   text-align: center;
+   line-height: 1.25rem;
+   
+   font-family: cocoLight;
+   background: rgba(255, 255, 255, 0.07);
+   border-radius: 16px;
+   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+   backdrop-filter: blur(10px);
+   -webkit-backdrop-filter: blur(10px);
+}
+
+.page3 {
+   height: 100vh;
+   width: 100%;
+   position: relative;
+   
+   background-image: 
+   linear-gradient(to bottom right, #2D4A53, #1D1D1D,#05161A);
+   color: #FFF;
+   padding: 5vh 3vh;
+   overflow: hidden;
+}
+
+.page3-title {
+   position: absolute;
+   top: 50%;
+   left: 0%;
+   transform: translate(0%, -50%);
+   
+   padding: 3vh;
+}
+
+.page3-title h1 {
+   font-family: blackMango;
+   font-size: 4rem;
+   font-weight: 900;
+   
+   text-transform: capitalize;
+   text-align: left;
+   line-height: 5rem;
+   letter-spacing: 2px;
+}
+
+.page3-title h1 span {
+   background-image:
+   linear-gradient(to left, #DF0732, #FF6426, #DF0732);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   
+   font-size: 7rem;
+   font-weight: 800;
+}
+
+.page3-title small {
+   font-family: cinzelLuxury;
+   font-size: 1.50rem;
+   
+   display: block;
+   margin-left: 5vh;
+   margin-top: -2vh;
+   
+   text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+}
+
+.page3-blur {
+   min-height: 150px;
+   width: 250px;
+   
+   background: rgba(255, 255, 255, 0.07);
+   border-radius: 16px;
+   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+   backdrop-filter: blur(1px);
+   -webkit-backdrop-filter: blur(1px);
+   padding: 2vh;
+   
+   position: absolute;
+   top: 63%;
+   left: 63.5%;
+   transform: translate(-50%, -50%);
+}
+
+.page3-blur h1 {
+   display: block;
+   text-transform: capitalize;
+   text-align: center;
+   border-bottom: 1px solid #FFF;
+   margin-bottom: 2vh;
+   padding: 0 0 0.5vh 0;
+   font-family: cinzelLuxury;
+}
+
+.page3-blur small {
+   text-transform: capitalize;
+   text-align: center;
+   
+   font-family: cocoLight;
+   display: block;
+   line-height: 1.15rem;
+}
+
+.page3-card {
+   height: 30vh;
+   width: 25vh;
+   
+   background-image: url(/page3-card.jpg);
+   background-size: cover;
+   background-position: top;
+   
+   position: absolute;
+   left: 42%;
+   border-radius: 6px;
+   opacity: 0.65;
+} /*--Page3 Ended--*/
+
+
+/*--Page4 Styling--*/
+.page4 {
+   height: 100vh;
+   width: 100%;
+   position: relative;
+   overflow: hidden;
+   
+   background-image: 
+   linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3))
+   ,url(/page4.jpg);
+   background-position: center;
+   background-size: cover;
+}
+
+.page4 .page4-card-con {
+   height: 47vh;
+   width: 30vh;
+   
+   background-color: #FFF;
+   padding: 2vh;
+   
+   position: absolute;
+   top: 60%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: space-evenly;
+}
+
+.page4-card-con .page4-card {
+   height: 75%;
+   width: 100%;
+   
+   background-image: url(/page4-card.jpg);
+   background-position: bottom;
+   background-size: cover;
+}
+
+.page4-card-con small {
+   text-transform: capitalize;
+   text-align: center;
+   
+   font-family: cocoLight;
+   margin-top: 2vh;
+}
+
+.page4-overlay {
+   height: 100%;
+   width: 100%;
+   
+   background: rgba(255, 255, 255, 0.07);
+   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+   backdrop-filter: blur(2px);
+   -webkit-backdrop-filter: blur(2px);
+   box-shadow: 0px 0px 15px #000;
+   position: fixed;
+}
+
+.search-bar {
+   height: 5vh;
+   width: 35vh;
+   
+   background: #FFF;
+   color: #888;
+   border-radius: 50px;
+   display: block;
+   
+   position: absolute;
+   top: 32%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   
+   font-family: cinzelRegular;
+   font-size: 0.85rem;
+   text-transform: capitalize;
+}
+
+.page4-heading {
+   display: block;
+   margin: 23vh auto 0 auto;
+   color: #FFF;
+   
+   font-family: slightRegular;
+   text-align: center;
+   text-transform: capitalize;
+}
+
+.navbar {
+   width: 100%;
+   color: #FFF;
+   
+   display: flex;
+   align-items: center;
+   justify-content:space-between;
+   
+   padding: 0 4vh;
+   margin: 0 auto;
+   position: absolute;
+   top: 5%;
+}
+
+.navbar small {
+   font-family: cinzelRegular;
+   text-transform: capitalize;
+   text-align: center;
+   line-height: 0.85rem;
+} /*--page4 Ended--*/
+
+
+/*--last page styling--*/
+.last {
+   min-height: 100vh;
+   width: 100%;
+   
+   background-image: 
+   linear-gradient(180deg, #233A4E, #9C6DB0);
+   background-position: center;
+   background-size: cover;
+   color: #FFF;
+   padding: 5vh 2vh;
+   overflow: hidden;
+   overflow-x: hidden;
+}
+
+.last-card {
+   width: 100%;
+   padding: 3vh 2vh;
+   color: #fff;
+   
+   background-image:
+   linear-gradient(315deg, #1B2C22, #013392);
+   background-position: center;
+   background-size: cover;
+   border-radius: 5px;
+   
+   display: block;
+   margin: 0 auto 0 auto;
+   
+   font-family: cocoLight;
+   line-height: 1.25rem;
+   text-transform: capitalize;
+   text-align: center;
+}
+
+.last>h1 {
+   display: block;
+   text-align: center;
+   text-transform: capitalize;
+   
+   font-family: rumaniaya;
+   font-weight: 100;
+   font-size: 3rem;
+   margin-bottom: 4vh;
+}
+
+.last .last-msg {
+   margin: 10vh auto 5vh auto;
+   padding: 0 2vh;
+}
+
+.last-msg h1 {
+   text-transform: capitalize;
+   text-align: center;
+   
+   font-family: cinzelRegular;
+   font-weight: 100;
+   font-size: 2rem;
+}
+
+.last-msg small {
+   display: block;
+   text-transform: capitalize;
+   text-align: center;
+   
+   padding-bottom: 0.5vh;
+   border-bottom: 1px solid #FFF;
+   
+   font-family: cocoLight;
+   margin: 0.5vh 0 5vh 0;
+}
+
+.last-msg span {
+   padding: 3vh 1vh;
+   width: 100%;
+   display: block;
+   
+   text-transform: capitalize;
+   text-align: center;
+   
+   font-family: cocoLight;
+   line-height: 1.25rem;
+   
+   background: rgba(255, 255, 255, 0.07);
+   border-radius: 16px;
+   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+   backdrop-filter: blur(5px);
+   -webkit-backdrop-filter: blur(5px);
+}
