@@ -13,56 +13,56 @@ html, body {
 /*---Custom Fonts---*/
 @font-face {
    font-family: robotoRegular;
-   src:url(/Roboto-Regular.ttf);
+   src:url(Roboto-Regular.ttf);
 }
 @font-face {
    font-family: cocoLight;
-   src:url(/CocoGothic-Light_trial.ttf);
+   src:url(CocoGothic-Light_trial.ttf);
 }
 
 @font-face {
    font-family: arizonia;
-   src:url(/ARIZONIA-REGULAR-HANDWRITTING.ttf);
+   src:url(ARIZONIA-REGULAR-HANDWRITTING.ttf);
 }
 
 @font-face {
    font-family: blackMango;
-   src:url(/BLACK-MANGO.ttf);
+   src:url(BLACK-MANGO.ttf);
 }
 
 @font-face {
    font-family: cinzelRegular;
-   src:url(/CINZEL-LUXURY-REGULAR.otf);
+   src:url(CINZEL-LUXURY-REGULAR.otf);
 }
 
 @font-face {
    font-family: cinzelLuxury;
-   src:url(/CINZEL-LUXURY.otf);
+   src:url(CINZEL-LUXURY.otf);
 }
 
 @font-face {
    font-family: karl;
-   src:url(/KARL-GEOFF-REGULAR.ttf);
+   src:url(KARL-GEOFF-REGULAR.ttf);
 }
 
 @font-face {
    font-family: rumaniaya;
-   src:url(/Rumaniaya-Handwritting.otf);
+   src:url(Rumaniaya-Handwritting.otf);
 }
 
 @font-face {
    font-family: slight;
-   src:url(/fonts/SLIGHT-HANDWRITTING.ttf);
+   src:url(fonts/SLIGHT-HANDWRITTING.ttf);
 }
 
 @font-face {
    font-family: slightRegular;
-   src:url(/Slight-Regular.ttf);
+   src:url(Slight-Regular.ttf);
 }
 
 @font-face {
    font-family: sunset;
-   src:url(/The-Sunset.ttf);
+   src:url(The-Sunset.ttf);
 } /*--Custom Fonts Ended--*/
 
 /*--Main Styling--*/
@@ -360,7 +360,7 @@ a{
    height: 30vh;
    width: 25vh;
    
-   background-image: url(/page3-card.jpg);
+   background-image: url(page3-card.jpg);
    background-size: cover;
    background-position: top;
    
@@ -380,7 +380,7 @@ a{
    
    background-image: 
    linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3))
-   ,url(/page4.jpg);
+   ,url(page4.jpg);
    background-position: center;
    background-size: cover;
 }
@@ -407,7 +407,7 @@ a{
    height: 75%;
    width: 100%;
    
-   background-image: url(/page4-card.jpg);
+   background-image: url(page4-card.jpg);
    background-position: bottom;
    background-size: cover;
 }
